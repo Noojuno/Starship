@@ -9,7 +9,47 @@
     <Import_RootNamespace>Starship</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Game1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\CommandLineOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Direction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Entities\Entity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Entities\EntityManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Event\InitializationEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Event\Input\ButtonReleaseEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Event\Input\KeyReleaseEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Event\PostInitializationEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Event\PreInitializationEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Event\RegistryRegisterEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Event\ResizeEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Graphics\Camera.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Graphics\Geometry\CubeMesh.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Graphics\Geometry\Mesh.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Graphics\GraphicsLibrary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Graphics\GUI\GuiComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Graphics\GUI\GuiManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Graphics\MeshBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Graphics\MeshData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Graphics\Shader\ShaderManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Graphics\Shader\ShaderProgram.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Graphics\Shader\ShaderType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Input\InputManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Interfaces\IRender.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Interfaces\IUpdate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Mathematics\Vector3Util.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Network\Client.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Network\PacketHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Network\Packets\IPacket.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Network\Packets\PacketTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Network\Server.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Registry\IRegisterable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Registry\Registry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Registry\RegistryManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\Util\Logger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\World\Block.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\World\Blocks\BlockDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\World\Blocks\BlockRegistry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\World\Chunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\StarshipEngine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)src\World\World.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Content\" />
@@ -17,4 +57,7 @@
   <ItemGroup>
     <MonoGameContentReference Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
   </ItemGroup>
- </Project>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)packages.config" />
+  </ItemGroup>
+</Project>
